@@ -35,6 +35,9 @@ Figure -02 HALF Subtractor
 
 **Truthtable**
 
+![image](https://github.com/user-attachments/assets/4a134ddb-9376-46a0-afb2-bf2c4e5cd2e7)
+
+
 **Procedure**
 
 1.	Type the program in Quartus software.
@@ -51,11 +54,42 @@ Figure -02 HALF Subtractor
 **Program:**
 
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+```
+i)HALF ADDER
+module ha(a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum= (a ^ b);
+assign carry= ( a & b);
+endmodule
+ii)HALF SUBTRACTOR
+module hs(a,b,difference,borrow);
+input a,b;
+output difference,borrow;
+assign difference= (a ^ b);
+assign borrow= ( ~a & b);
+endmodule
+```
 
-Developed by: RegisterNumber:*/
+Developed by: Kalpanaa Babu T.M
 
-**RTL Schematic**
+RegisterNumber:212224230112
 
-**Output/TIMING Waveform**
+**RTL Schematic:**
+
+![WhatsApp Image 2025-04-23 at 21 56 50_3b0b867c](https://github.com/user-attachments/assets/28f42d8b-b6e1-4685-b229-f90f84dadf65)
+
+![WhatsApp Image 2025-04-23 at 22 04 11_628f3691](https://github.com/user-attachments/assets/6f23f80b-e8fe-4e47-b6b8-90da292f98d4)
+
+
+
+**Output/TIMING Waveform:**
+
+![WhatsApp Image 2025-04-23 at 21 56 23_d7182da9](https://github.com/user-attachments/assets/19c21e84-67d1-4f49-aee5-edb2101bf0b7)
+
+![WhatsApp Image 2025-04-23 at 22 05 56_40dcd802](https://github.com/user-attachments/assets/07a2ac3c-9cdb-4c45-a6ac-1768fe6bc673)
+
+
 
 **Result:**
+Thus the truth table of logic gates in Quartus II using Verilog programming is studied and verified.
